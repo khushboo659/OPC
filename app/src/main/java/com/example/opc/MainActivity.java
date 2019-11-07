@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void signIn(View view) {
-        final String myEmail = email.getText().toString();
-        final String myPassword = password.getText().toString();
+        final String myEmail = email.getText().toString().trim();
+        final String myPassword = password.getText().toString().trim();
 
         if (myEmail.length() <= 0 || myPassword.length() <= 0)
             Toast.makeText(MainActivity.this, "please complete all the fields", Toast.LENGTH_SHORT).show();
